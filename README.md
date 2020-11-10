@@ -48,3 +48,31 @@ class Server extends Computer {
 
 `Laptop` et `Server` sont des classes "enfants" de `Computer`. Elles héritent donc de ses propriétés et méthodes.
 Mais l'intérêt est d'ajouter des propriétés et/ou méthodes spécifiques à `Laptop` et spécifiques à `Server`.
+
+
+## Visibilité
+
+Par défaut, si on ne précise rien, les propriétés et les méthodes sont publiques. On peut avoir un controle sur la visibilité des propriétés et des méthodes :
+
+### `public`
+
+C'est "open bar".
+
+Les propriétés sont accessibles et modifiables **depuis n'importe quelle partie du code**.  (du coup, pas besoin de getters et de setters)
+Les méthodes peuvent être appelées **depuis n'importe quelle partie du code**.
+
+### `private`
+
+C'est "fermé à clés".
+
+Les propriétés sont accessibles et modifiables **depuis le code de la classe uniquement**.  
+Les méthodes peuvent être appelées **depuis le code de la classe uniquement**.
+
+## `protected`
+
+C'est "pour la famille".
+
+![The Godfather](https://media.giphy.com/media/l0Iy89owS5CYP7Hk4/giphy-downsized.gif)
+
+Les propriétés sont accessibles et modifiables **depuis le code de la classe, de ses enfants et de ses ancêtres**.  
+Les méthodes peuvent être appelées **depuis le code de la classe, de ses enfants et de ses ancêtres**.
